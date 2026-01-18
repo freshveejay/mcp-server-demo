@@ -2,19 +2,23 @@
   "name": "mcp-server-demo",
   "version": "1.0.0",
   "description": "Minimal MCP server for LLM tool integration",
+  "type": "module",
   "main": "src/index.ts",
   "scripts": {
     "dev": "wrangler dev",
-    "deploy": "wrangler publish",
-    "test": "vitest"
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "hono": "^4.0.0"
+    "hono": "^4.6.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.0.0",
-    "wrangler": "^3.0.0",
-    "vitest": "^1.0.0"
+    "@cloudflare/workers-types": "^4.20241106.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0",
+    "wrangler": "^3.91.0"
   },
-  "keywords": ["mcp", "cloudflare", "workers", "llm", "openai", "tools"]
+  "keywords": ["mcp", "cloudflare", "workers", "llm", "openai", "claude", "tools"]
 }
