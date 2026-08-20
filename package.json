@@ -18,7 +18,7 @@
     "@cloudflare/workers-types": "^4.20241106.0",
     "typescript": "^5.6.0",
     "vitest": "^2.1.0",
-    "wrangler": "^3.91.0"
+    "wrangler": "^4.124.0"
   },
   "keywords": ["mcp", "cloudflare", "workers", "llm", "openai", "claude", "tools"]
 }
